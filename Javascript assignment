@@ -1,0 +1,6 @@
+function MissingNumber (numbers) {
+    let fullSum = numbers.length * (numbers.length + 1) / 2
+    let realSum = 0
+    numbers.forEach(num => { realSum += num })
+    return fullSum - realSum
+}
